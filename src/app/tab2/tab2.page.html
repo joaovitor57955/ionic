@@ -7,6 +7,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-alert
+  
+></ion-alert>
+  
   <form #fc="ngForm">
     <ion-list>
 
@@ -27,7 +31,8 @@
       </ion-item>
 
     <ion-item class="pt-10">
-      <ion-button [disabled]="fc.invalid" slot="end">Salvar</ion-button>
+      {{user.nome}}
+      <ion-button [disabled]="fc.invalid" slot="end" (click)="save()">Salvar</ion-button>
       <ion-button color="danger" slot="end">Cancelar</ion-button>
         
     </ion-item>

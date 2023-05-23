@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Tab2Page } from './tab2.page';
 
+import { User } from '../Model/user';
+
 const routes: Routes = [
   {
     path: '',
@@ -13,4 +15,7 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class Tab2PageRoutingModule {}
+export class Tab2PageRoutingModule { }
+
+
+
